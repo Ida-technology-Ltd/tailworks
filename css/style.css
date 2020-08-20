@@ -1,0 +1,73 @@
+.ida{
+    color:green;font-size: 50px;text-align: center;background-color:aqua; padding:12px
+}
+
+.main{
+    max-width: 1200px;
+    width: 100%;
+    /* background:'blue' */
+}
+
+.div1{
+    max-width: 100%;
+    width:200px;
+    float:left;
+    background-color: brown;
+}
+.div2{
+    max-width: 100%;
+    width:400px;
+    float:left;
+    background-color:green;
+}
+.div3{
+    max-width: 100%;
+    width:400px;
+    float:left;
+    background-color:purple;
+}
+.div4{
+    max-width: 100%;
+    width:200px;
+    float:left;
+    background-color: brown;
+}
+h1{
+    color:white;
+    font-size:40px;
+}
+
+/* .navbar{
+    list-style-type: none;
+    background: purple;
+}
+.navbar li{
+    display: inline-block;
+    padding:12px;
+} */
+
+ul{
+    list-style-type: none;
+    background: purple;
+   
+    overflow: hidden;
+
+}
+
+li{
+    float:left
+}
+li a{
+    display: block;
+    text-decoration:none;
+    padding:14px;
+    color:white
+}
+
+li a:hover{
+    background-color: seagreen;
+}
+
+.bg{
+    background-color:greenyellow ;
+}
