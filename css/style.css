@@ -1,0 +1,13 @@
+.cont{
+    display: flex;
+}
+.search{
+    width: 600px;
+}
+.togg{
+    width: 150px;
+}
+.logo{
+    width: 300px;
+   
+}
