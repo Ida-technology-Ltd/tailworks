@@ -1,0 +1,43 @@
+
+  
+.main {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+
+  }
+  
+    .train1 {
+    margin-left: 16px;
+    border-radius: 20px;
+    float:left;
+    width: 270px;
+  
+    }
+    
+    .train2 {
+    margin-left: 16px;
+    border-radius: 20px;
+    float:left;
+    width: 270px;
+     
+    
+    }
+    .train3 {
+    margin-left: 16px;
+    border-radius: 20px;
+    float:left;
+    width: 270px;
+  
+    }
+ 
+    .px-4 img {
+        width: 100px;
+        margin-right:20px;
+        float:left;
+
+    }
+    .img{
+       margin-top:-5px;
+        height: -300px;
+    }
