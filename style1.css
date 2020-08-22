@@ -1,0 +1,46 @@
+.container{
+	background-color: white;
+	border-radius: 6px;
+	margin-top: 50px;
+	padding-left: 50px;
+	margin-left: 40px;
+	height: 470px;
+}
+.links{
+
+	padding-left: 250px;
+	margin-top: -85px;
+}
+.links ul li{
+
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+	font-size: 15px;
+	font-family: alata;
+}
+.links ul li a{
+
+	text-decoration: none;
+	color: black;
+}
+.other{
+	margin-left: 1000px;
+	margin-top: -40px;
+}
+.other ul li a{
+	text-decoration: none;
+	color: pink;
+}
+.new p{
+	margin-top: 50px;
+	font-size: 40px;
+	font-family: elephant;
+}
+.you img{
+	margin-left: 700px;
+	margin-top: -230px;
+
+	border-radius: 360px;
+
+}
