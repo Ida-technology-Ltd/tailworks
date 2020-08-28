@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body class="bg-gray-400">
-    <div class="p-4">
+    <div class="p-12">
         <div class=" bg-gray-100 rounded-lg">
             <div class="h-8"></div>
 
     <div class="flex ">
         <div class="w-5/6">
             <div class="flex">
-                <div class="w-20  max-h-full px-4">
+                <div class="w-20  px-4">
                 <img src="img/ft2.jpg" class="rounded-full">
 
 <div class="mt-32 text-gray-900">
@@ -183,7 +184,7 @@
             
         </div>
 <div class="bg-white ">
-    <img src="img/undraw_visual_data_b1wx.svg" class="">
+    <canvas id="mChart" width="400" height="300"></canvas>
     <div class="w-full">
         <h1 class="mt-2 text-gray-800  font-bold px-2">Spending Overview             <span class="float-right py-2">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -210,8 +211,8 @@
 
 
 
-        <div class="bg-white ">
-            <img src="img/blue.svg">
+        <div class="bg-white text-blue-800">
+            <canvas id="myChart" width="400" height="300"></canvas>
             <div class="w-full">
                 <h1 class="mt-2 text-gray-800  font-bold px-2">Income Overview             <span class="float-right py-2">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -503,5 +504,91 @@
     <div class="p-2"></div>
 </div>
 </div>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat','Sun'],
+            datasets: [{
+                label: 'of Scheldure of Week for Expense',
+                data: [12, 19, 3, 5, 10, 3,20],
+                backgroundColor: [
+                    'rgba(72, 72, 248)',
+                    'rgba(72, 72, 248)',
+                    'rgba72, 72, 248)',
+                    'rgba(72, 72, 248)',
+                    'rgba(72, 72, 248)',
+                    'rgba(72, 72, 248)',
+                    'rgba(72, 72, 248)',
+                ],
+                borderColor:  [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: false
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+  
+
+
+    <script>
+        var ctx = document.getElementById('mChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat','Sun'],
+                datasets: [{
+                    label: 'of Scheldure of Week for Income',
+                    data: [12, 19, 3, 5, 12, 3,12],
+                    backgroundColor: [
+                        'rgba(248, 172, 31)',
+                        'rgba(248, 172, 31)',
+                        'rgba(248, 172, 31)',
+                        'rgba(248, 172, 31)',
+                        'rgba(248, 172, 31)',
+                        'rgba(248, 172, 31)',
+                        'rgba(248, 172, 31)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        
+        
 </body>
 </html>
